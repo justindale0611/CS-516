@@ -2,13 +2,13 @@ body {
 	background-color: white;
 }
 h1 {
-	height: 25%
+	height: 400px;
 	color: #228b22;
 	background: #f5fc35;
 	text-align: center;
-	padding: 0; background-color:#f5fc35; 
-	margin: 0; background-color:#f5fc35;
-	border: 0; background-color:#f5fc35;
+	padding: 0;
+	margin: 0;
+	border: 0; 
 }
 ul {
 	list-style-type: none;
