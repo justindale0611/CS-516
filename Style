@@ -1,0 +1,25 @@
+body {
+	color: white;
+	background-color: #228b22;
+}
+h1 {
+	color: #228b22;
+	background: #F0E68C;
+	text-align: center;
+	padding-top: 0;
+	margin-top: 0;
+	border-top: 0;
+}
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+li {
+	float: left;
+}
+a{
+	display: block;
+	padding: 10px;
+	background:  #F0E68C;
+}

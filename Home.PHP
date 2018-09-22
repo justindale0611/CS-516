@@ -1,9 +1,6 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-	
-</head>
+<?php require_once "header.php"; ?>
 
 <body>
 <br>
