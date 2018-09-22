@@ -2,12 +2,14 @@ body {
 	background-color: white;
 }
 h1 {
+	height: 25%
 	color: #228b22;
 	background: #F0E68C;
 	text-align: center;
 	padding: 0;
 	margin: 0;
 	border: 0;
+	border-color: #F0E68C;
 }
 ul {
 	list-style-type: none;
