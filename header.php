@@ -6,7 +6,7 @@
 </head>
 <body>
 <h1>
-	<img src="transparent.png" alt="Borah Wrestler" height="10%" width="10%" class="center">
+	<img src="transparent.png" alt="Borah Wrestler" height="5%" width="5%" class="center">
 </h1>
 <div>
 <ul>
