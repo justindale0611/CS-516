@@ -22,7 +22,7 @@ li {
 a{
 	display: block;
 	padding: 10px;
-	background:  #F0E68C;
+	background: white;
 }
 p{
 	clear: left;
@@ -33,6 +33,5 @@ p{
     margin-right: auto;
     width: 50%;
 }
-.Nav_Bar{
-	background-color: white
+
 }
