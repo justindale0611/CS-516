@@ -4,11 +4,11 @@ body {
 h1 {
 	height: 25%
 	color: #228b22;
-	background: ##f5fc35;
+	background: #f5fc35;
 	text-align: center;
-	padding: 0; background-color:#F0E68C; 
-	margin: 0; background-color:#F0E68C;
-	border: 0; background-color:#F0E68C;
+	padding: 0; background-color:#f5fc35; 
+	margin: 0; background-color:#f5fc35;
+	border: 0; background-color:#f5fc35;
 }
 ul {
 	list-style-type: none;
