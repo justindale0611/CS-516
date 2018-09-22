@@ -3,7 +3,7 @@ body {
 }
 h1 {
 	height: 5%;
-	color: #228b22;
+	color: #004101;
 	background: #FFC000;
 	text-align: center;
 	padding: 0;
@@ -28,7 +28,7 @@ p{
 	height: 100%;
 	clear: left;
 	color: white;
-	background-color: #228b22; 
+	background-color: #004101; 
 }
 .center {
     display: block;
