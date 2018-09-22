@@ -6,7 +6,7 @@
 </head>
 <body>
 <h1>Borah High School Wrestling</h1>
-<div>
+<div class="Nav_Bar">
 <ul>
 	<li><a href ="https://www.google.com/">Home</a></li>
 	<li><a href ="https://www.sierratradingpost.com/">Schedule</a></li>
