@@ -6,10 +6,9 @@ h1 {
 	color: #228b22;
 	background: #F0E68C;
 	text-align: center;
-	padding: 0;
-	margin: 0;
-	border: 0;
-	border-color: #F0E68C;
+	padding: 0; background-color:#F0E68C; 
+	margin: 0; background-color:#F0E68C;
+	border: 0; background-color:#F0E68C;
 }
 ul {
 	list-style-type: none;
