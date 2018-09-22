@@ -5,7 +5,7 @@
 	<link rel="stylesheet" href="Style.CSS">
 </head>
 <body>
-<h1><img src="transparent.PNG" alt="logo" height="10%" width="10%"></h1>
+<h1><img src="logo.jpg" alt="logo" height="10%" width="10%"></h1>
 <div>
 <ul>
 	<li><a href ="https://www.google.com/">Home</a></li>
