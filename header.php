@@ -5,7 +5,9 @@
 	<link rel="stylesheet" href="Style.CSS">
 </head>
 <body>
-<h1><img src="logo.jpg" alt="logo" height="10%" width="10%"></h1>
+<h1>
+	<img src="Alias.jpg" alt="Borah Wrestler" height="25%" width="25%" class="center">
+</h1>
 <div>
 <ul>
 	<li><a href ="https://www.google.com/">Home</a></li>
