@@ -6,9 +6,9 @@ h1 {
 	color: #228b22;
 	background: #F0E68C;
 	text-align: center;
-	padding-top: 0;
-	margin-top: 0;
-	border-top: 0;
+	padding: 0;
+	margin: 0;
+	border: 0;
 }
 ul {
 	list-style-type: none;
@@ -26,4 +26,10 @@ a{
 }
 p{
 	clear: left;
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
 }
