@@ -1,6 +1,5 @@
 body {
-	color: white;
-	background-color: #228b22;
+	background-color: white;
 }
 h1 {
 	color: #228b22;
@@ -26,6 +25,8 @@ a{
 }
 p{
 	clear: left;
+	color: white;
+	background-color: #228b22; 
 }
 .center {
     display: block;
