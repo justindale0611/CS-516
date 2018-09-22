@@ -2,7 +2,9 @@
 <html>
 <head>
 	<title>Borah High School Wrestling</title>
-	<link rel="stylesheet" href="Style.css">
+	<link rel="stylesheet" href="Style.CSS">
+</head>
+<body>
 <h1>Borah High School Wrestling</h1>
 <div>
 <ul>
@@ -15,5 +17,5 @@
 	<li><a href ="https://www.nikon.com/">Coaching Staff</a></li>
 </ul>
 </div>
-
+</body>
 </html>
