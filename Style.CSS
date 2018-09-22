@@ -23,3 +23,6 @@ a{
 	padding: 10px;
 	background:  #F0E68C;
 }
+div{
+	clear: left;
+}
