@@ -25,6 +25,7 @@ a{
 	background: white;
 }
 p{
+	height: 100%;
 	clear: left;
 	color: white;
 	background-color: #228b22; 
