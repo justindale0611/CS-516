@@ -11,7 +11,7 @@
 </h1>
 <div>
 <ul>
-	<li><a href ="Home.php">Home</a></li>
+	<li><a href ="Home.PHP">Home</a></li>
 	<li><a href ="https://www.sierratradingpost.com/">Schedule</a></li>
 	<li><a href ="https://www.sportsmanswarehouse.com/">Wrestler Login</a></li>
 	<li><a href ="https://www.cabelas.com/">Fundraising</a></li>
