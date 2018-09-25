@@ -4,7 +4,7 @@
 <link rel="stylesheet" type="text/css" href="Style.CSS">
 
 <body>
-<p>Schedule goes here
+<p>Today's Date
 </p>
 </body>
 </html>
