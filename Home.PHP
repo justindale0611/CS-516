@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<?php include ("header.php");?>
+<?php require_once("header.php");?>
 <link rel="stylesheet" type="text/css" href="Style.CSS">
 
 <body>
