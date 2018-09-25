@@ -8,7 +8,7 @@
 </h1>
 <div >
 <ul>
-	<li><a href ="index.html">Home</a></li>
+	<li><a href ="index.php">Home</a></li>
 	<li><a href ="Schedule.php">Schedule</a></li>
 	<li><a href ="WrestlerLogin.php">Wrestler Login</a></li>
 	<li><a href ="Fundraising.php">Fundraising</a></li>
