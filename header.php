@@ -10,7 +10,7 @@
 <ul>
 	<li><a href ="Home.PHP">Home</a></li>
 	<li><a href ="Schedule.php">Schedule</a></li>
-	<li><a href ="https://www.sportsmanswarehouse.com/">Wrestler Login</a></li>
+	<li><a href ="WrestlerLogin.php">Wrestler Login</a></li>
 	<li><a href ="https://www.cabelas.com/">Fundraising</a></li>
 	<li><a href ="https://www.basspro.com/">Spirit Gear</a></li>
 	<li><a href ="http://vortexoptics.com/">Photos</a></li>
