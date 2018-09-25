@@ -1,5 +1,3 @@
-<!DOCTYPE html>
-<html>
 <head>
 	<title>Borah High School Wrestling</title>
 	<link rel="stylesheet" href="Style.CSS">
@@ -19,4 +17,3 @@
 	<li><a href ="https://www.nikon.com/">Coaching Staff</a></li>
 </ul>
 </div>
-</html>
