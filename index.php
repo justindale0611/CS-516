@@ -1,1 +1,1 @@
-<?php require_once "Home.PHP"; ?>
+<?php include 'Home.PHP'; ?>
