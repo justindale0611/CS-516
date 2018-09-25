@@ -1,1 +1,1 @@
-<?php include "Home.PHP"; ?>
+<?php require "Home.PHP"; ?>
