@@ -4,7 +4,7 @@
 <link rel="stylesheet" type="text/css" href="Style.CSS">
 
 <body>
-<p><object width="400" height="400" data="Schedule.pdf"></object>
+<p><object height="25%" width="25%" class="center" data="Schedule.pdf"></object>
 </p>
 </body>
 </html>
