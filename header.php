@@ -11,9 +11,6 @@
 	<li><a href ="index.php">Home</a></li>
 	<li><a href ="Schedule.php">Schedule</a></li>
 	<li><a href ="WrestlerLogin.php">Wrestler Login</a></li>
-	<li><a href ="Fundraising.php">Fundraising</a></li>
-	<li><a href ="SpiritGear.php">Spirit Gear</a></li>
-	<li><a href ="Photos.php">Photos</a></li>
 	<li><a href ="CoachingStaff.php">Coaching Staff</a></li>
 </ul>
 </div>
