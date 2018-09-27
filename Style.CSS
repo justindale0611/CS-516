@@ -37,5 +37,9 @@ p{
     width: 50%;
 }
 .footer {
-	background-color: #004101; 
+	
+	background-color: #004101;
+	border-color: #FFC000;
+	color: #FFC000;
+
 }
