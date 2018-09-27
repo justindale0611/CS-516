@@ -6,5 +6,8 @@
 <body>
 	<p>Wrestler Login please</p>
 </body>
+<?php 
+	require_once("Footer.php");
+?>
 </html>
 

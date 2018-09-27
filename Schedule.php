@@ -7,5 +7,8 @@
 <p><object height="400" width="800" class="center" data="Schedule.pdf"></object>
 </p>
 </body>
+<?php 
+	require_once("Footer.php");
+?>
 </html>
 

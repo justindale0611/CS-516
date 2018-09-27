@@ -7,5 +7,8 @@
 <p>Coaching Staff Information
 </p>
 </body>
+<?php 
+	require_once("Footer.php");
+?>
 </html>
 
