@@ -4,8 +4,7 @@
 <link rel="stylesheet" type="text/css" href="Style.CSS">
 
 <body>
-<p>Wrestler Login please
-</p>
+	<p>Wrestler Login please</p>
 </body>
 </html>
 
