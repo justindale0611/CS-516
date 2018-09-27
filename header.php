@@ -6,11 +6,11 @@
 <h1>
 	<img src="transparent.png" alt="Borah Wrestler" height="25%" width="25%">
 </h1>
-<div >
-<ul>
-	<li><a href ="index.php">Home</a></li>
-	<li><a href ="Schedule.php">Schedule</a></li>
-	<li><a href ="WrestlerLogin.php">Wrestler Login</a></li>
-	<li><a href ="CoachingStaff.php">Coaching Staff</a></li>
+<div id="navigation">
+<ul class="nav">
+	<li class="nav-item"><a href ="index.php">Home</a></li>
+	<li class="nav-item"><a href ="Schedule.php">Schedule</a></li>
+	<li class="nav-item"><a href ="WrestlerLogin.php">Wrestler Login</a></li>
+	<li class="nav-item"><a href ="CoachingStaff.php">Coaching Staff</a></li>
 </ul>
 </div>
