@@ -36,8 +36,9 @@ p{
     margin-right: auto;
     width: 50%;
 }
-#schedule{
-	height: 4000 px;
+.Page_Heading
+{
+	clear: left;
+	
 }
-
 }
