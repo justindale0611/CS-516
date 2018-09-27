@@ -4,8 +4,8 @@
 <link rel="stylesheet" type="text/css" href="Style.CSS">
 
 <body>
-<p><img src="CoachG.jpg" alt="Borah Wrestler" height="25%" width="25%" class="center">
-<img src="CoachJ.jpg" alt="Borah Wrestler" height="25%" width="25%" class="center">
+<p><img class= "Coach" src="CoachG.jpg" alt="Borah Wrestler" height="25%" width="25%" class="center">
+<img class="Coach" src="CoachJ.jpg" alt="Borah Wrestler" height="25%" width="25%" class="center">
 </p>
 </body>
 <?php 
