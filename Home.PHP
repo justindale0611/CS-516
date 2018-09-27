@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html>
-<?php require_once("header.php");?>
+<?php 
+	require_once("header.php");
+?>
 <link rel="stylesheet" type="text/css" href="Style.CSS">
-
+<h1> Home </h1>
 <body>
 <p>Welcome to Borah High School's wrestling page. This page contains all information needed for wrestlers, parents, fans, and administrators. We cannot thank you enough for your support and look forward to seeing you at our next match.
 <img src="Alias.jpg" alt="Borah Wrestler" height="25%" width="25%" class="center">
