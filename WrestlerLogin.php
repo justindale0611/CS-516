@@ -11,7 +11,8 @@
 		Password: <br>
 		<input type="text" name="Password"><br>
 		</form>
-</body>
+		<button type="submit"> Submit </button>
+	</body>
 <?php 
 	require_once("Footer.php");
 ?>
