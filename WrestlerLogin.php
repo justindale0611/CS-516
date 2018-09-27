@@ -4,7 +4,12 @@
 <link rel="stylesheet" type="text/css" href="Style.CSS">
 
 <body>
-	<p>Wrestler Login please</p>
+	<form> 
+		Username: <br>
+		<input type="text" name="Username"><br>
+		Password: <br>
+		<input type="text" name="Password"><br>
+		</form>
 </body>
 <?php 
 	require_once("Footer.php");
