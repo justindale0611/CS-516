@@ -24,6 +24,9 @@ li {
 	padding: 10px;
 	background: white;
 }
+.nav-item a:hover {
+	background-color:  #004101;
+}
 p{
 	height: 100%;
 	clear: left;
