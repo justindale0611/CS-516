@@ -9,5 +9,9 @@
 <img src="Alias.jpg" alt="Borah Wrestler" height="25%" width="25%" class="center">
 </p>
 </body>
+
+<?php 
+	require_once("Footer.php");
+?>
 </html>
 
