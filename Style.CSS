@@ -45,6 +45,7 @@ p{
 	border-color: #FFC000;
 	color: #FFC000;
 	font-size: 16px;
-
-
+}
+form{
+	clear: left;
 }
