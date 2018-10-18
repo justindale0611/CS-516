@@ -5,11 +5,11 @@
 
 <body>
 	<br>
-	<form> 
-		Username: <br>
-		<input type="text" name="Username"><br>
-		Password: <br>
-		<input type="password" name="Password"><br>
+	<form method="post" action="login_handler.php">
+			Login:<br>
+			<input type="text" name="login" value=""><br>
+			password:<br>
+			<input type="password" name="password">
 		</form>
 		<button type="submit"> Submit </button>
 	</body>
