@@ -6,7 +6,7 @@
   $_SESSION['presets']['password'] = $password;
 
   $messages = array();
-
+  echo "here";
   $bad = false;
   if (empty($name)) {
     $_SESSION['messages'][] = "Name is required.";
