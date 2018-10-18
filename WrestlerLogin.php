@@ -12,7 +12,6 @@ session_start();?>
 			password:<br>
 			<input type="password" name="password">
 			<div><input type="submit" value="Login">    </div>
-
 		</form>
 	</body>
 <?php 
