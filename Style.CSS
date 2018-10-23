@@ -1,5 +1,5 @@
 body {
-background-color: #004101;
+background-color: white;
 	}
 h1 {
 	height: 5%;
@@ -49,6 +49,7 @@ p{
 form{
 	clear: left;
 	background-color: #004101;
+	color: white;
 }
 .Coach{
 	clear: left;
