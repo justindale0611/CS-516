@@ -16,27 +16,30 @@ require_once('Dao.php');
     $_SESSION['errors']['password'] = "Password is required.";
     $bad = true;
   }
-  // if ($bad) {
-  //   header('Location: WrestlerLogin.php');
-  //   exit;
-  // }
+
+  if ($bad) {
+    header("Location: WrestlerLogin.php");
+    exit;
+  }
   // Got here, means everything validated, and the comment will post.
+
+  ////THIS NEEDS WORK
   if (empty($errors)) {
     try {
       $dao = new Dao();
       $user = $dao->validateUser($username, $password);
       if ($user) {
-        header('Home.php');
+        header("Location: Home.php");
       } else {
         $errors['message'] = "Invalid username or password";
-        header('WrestlerLogin.php');
+        header("Location: WrestlerLogin.php");
       }
     } catch (Exception $e) {
       $errors['message' = "Something went wrong. Please come back later."]
-      header('WrestlerLogin.php');
+      header("Location: WrestlerLogin.php");
     }
   } else {
-    header('WrestlerLogin.php');
+    header("Location: WrestlerLogin.php");
     die;
   }
 ?>

@@ -20,6 +20,7 @@ class Dao {
 	    $q->execute();
 	}
 
+	//MAYBE SOMETHING IS WRONG HERE
 	public function validateUser($username, $password) {
 		$conn = $this->getConnection();
 		$stmt = $conn->prepare("SELECT id, username, password FROM users WHERE users = :username");
