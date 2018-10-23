@@ -10,7 +10,7 @@ session_start();
 	<form method="POST" action="login_handler.php">
 			<label for="login">Login:</label><br>
 			<input type="text" name="login" value=""><br>
-			<label for="password">Password:"</label><br>
+			<label for="password">Password:</label><br>
 			<input type="password" name="password">
 			<button type="submit" value="Login">Login</button>
 		</form>
