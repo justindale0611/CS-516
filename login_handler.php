@@ -29,9 +29,11 @@ require_once('Dao.php');
         header('Home.php');
       } else {
         $errors['message'] = "Invalid username or password";
+        header('WrestlerLogin.php');
       }
     } catch (Exception $e) {
       $errors['message' = "Something went wrong. Please come back later."]
+      header('WrestlerLogin.php');
     }
   } else {
     header('WrestlerLogin.php');
