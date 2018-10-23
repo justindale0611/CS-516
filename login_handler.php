@@ -1,6 +1,7 @@
 <?php
 require_once('Dao.php');
   session_start();
+  echo("hello 1");
   $username = $_POST['username'];
   $password = $_POST['password'];
   $_SESSION['presets']['username'] = $username;
@@ -18,6 +19,7 @@ require_once('Dao.php');
   }
 
   if ($bad) {
+    echo("hello 2");
     header("Location: WrestlerLogin.php");
     exit;
   }
@@ -25,12 +27,16 @@ require_once('Dao.php');
 
   ////THIS NEEDS WORK
   if (empty($errors)) {
+    echo("hello 3");
     try {
+      echo("hello 5");
       $dao = new Dao();
       $user = $dao->validateUser($username, $password);
       if ($user) {
+        echo("hello 6");
         header("Location: Home.php");
       } else {
+        echo("hello 7");
         $errors['message'] = "Invalid username or password";
         header("Location: WrestlerLogin.php");
       }
