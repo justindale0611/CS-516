@@ -9,4 +9,20 @@ return
 new PDO("mysql:host={$this->host};dbname={$this->db}")
 }
 
+public function saveLogin($name, $password) {
+	$connection =$this->getConnection();
+	 $saveQuery =
+        "INSERT INTO users (name, password)
+        VALUES (:name, :comment)";
+    $q = $conn->prepare($saveQuery);
+    $q->bindParam(":name", $name);
+    $q->bindParam(":password", $password);
+    $q->execute();
+}
+
+		
+   
+        
+
+  }
 }

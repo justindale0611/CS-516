@@ -23,7 +23,7 @@
   // Got here, means everything validated, and the comment will post.
   unset($_SESSION['presets']);
   require_once 'Dao.php';
-  //$dao->saveComment($name, $comment, $imagePath);
+  $dao->saveLogin($name, $password);
   header('Location: Home.php');
   exit;
 ?>
