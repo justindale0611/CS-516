@@ -8,11 +8,11 @@ session_start();
 <body>
 	<br>
 	<form method="POST" action="login_handler.php">
-			Login:<br>
+			<label for="login">Login:</label><br>
 			<input type="text" name="login" value=""><br>
-			password:<br>
+			<label for="password>password:"</label><br>
 			<input type="password" name="password">
-			<div><input type="submit" value="Login">    </div>
+			<button type="submit" value="Login">Login</button>
 		</form>
 	</body>
 <?php 
