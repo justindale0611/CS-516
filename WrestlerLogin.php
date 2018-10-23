@@ -8,9 +8,15 @@ session_start();
 <body>
 	<br>
 	<form method="POST" action="login_handler.php">
-			<label for="login">Login:</label><br>
-			<input type="text" name="login" value=""><br>
+			<label for="username">Username:</label><br>
+			<?php if(isset($_SESSION['errors']['username'])) { ?>
+			<span id="usernameError" class="error"><?=$_SESSION['messages']['username']?></span>
+			<?php } ?>
+			<input type="text" name="username" value=""><br>
 			<label for="password">Password:</label><br>
+			<?php if(isset($_SESSION['errors']['password'])) { ?>
+			<span id="passwordError" class="error"><?=$_SESSION['messages']['password']?></span>
+			<?php } ?>
 			<input type="password" name="password">
 			<button type="submit" value="Login">Login</button>
 		</form>

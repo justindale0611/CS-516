@@ -1,19 +1,18 @@
 <?php
   session_start();
-  $name = $_POST['login'];
+  $name = $_POST['username'];
   $password = $_POST['password'];
-  $_SESSION['presets']['login'] = $name;
+  $_SESSION['presets']['username'] = $name;
   $_SESSION['presets']['password'] = $password;
 
-  $messages = array();
-  echo "here";
+  $errors = array();
   $bad = false;
   if (empty($name)) {
-    $_SESSION['messages'][] = "Name is required.";
+    $_SESSION['errors']['username'] = "Name is required.";
     $bad = true;
   }
   if (empty($password)) {
-    $_SESSION['messages'][] = "Password is required.";
+    $_SESSION['errors']['password'] = "Password is required.";
     $bad = true;
   }
   if ($bad) {
