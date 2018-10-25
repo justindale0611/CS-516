@@ -5,11 +5,6 @@ class Dao {
 	private $user = "b0d08fe860ed9e";
 	private $password = "e9495ff9";
 
-	// public function getConnection () {
-	// 	return new PDO("mysql:host={$this->host};dbname={$this->db}")
-	// }
-
-	
 	private function getConnection() {
 	$conn = new PDO ( "mysql:dbname={$this->dbname};host={$this->host};", "$this->user", "$this->password" );
 	$conn->setAttribute ( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
