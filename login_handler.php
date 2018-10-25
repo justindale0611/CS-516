@@ -29,13 +29,13 @@ if (empty($errors)) {
   echo "we are in if";
   try {
     $dao = new Dao();
-    // $user = $dao->validateUser($username, $password);
-    // if ($user) {
-    //   header("Location: Home.php");
-    // } else {
-    //   $errors['message'] = "Invalid username or password";
-    //   header("Location: WrestlerLogin.php");
-    // }
+    $user = $dao->validateUser($username, $password);
+    if ($user) {
+      header("Location: Home.php");
+    } else {
+      //$errors['message'] = "Invalid username or password";
+      header("Location: WrestlerLogin.php");
+    }
   } catch (Exception $e) {
     // $errors['message' = "Something went wrong. Please come back later."]
     // header("Location: WrestlerLogin.php");
