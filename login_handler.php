@@ -1,6 +1,7 @@
 <?php
 require_once("Dao.php");
 session_start();
+
 $username = $_POST['username'];
 $password = $_POST['password'];
 $_SESSION['presets']['username'] = $username;
@@ -25,6 +26,7 @@ if ($bad) {
 
 ////THIS NEEDS WORK
 if (empty($errors)) {
+  echo "we are in if";
   try {
     $dao = new Dao();
     // $user = $dao->validateUser($username, $password);
@@ -35,11 +37,13 @@ if (empty($errors)) {
     //   header("Location: WrestlerLogin.php");
     // }
   } catch (Exception $e) {
-    $errors['message' = "Something went wrong. Please come back later."]
-    header("Location: WrestlerLogin.php");
+    // $errors['message' = "Something went wrong. Please come back later."]
+    // header("Location: WrestlerLogin.php");
+    echo "somthing is wrong 1";
   }
 } else {
-  header("Location: WrestlerLogin.php");
-  die;
+  // header("Location: WrestlerLogin.php");
+  // die;
+  echo "something is wrong 2";
 }
 ?>
