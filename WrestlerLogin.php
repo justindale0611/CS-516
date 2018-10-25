@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
-<?php require_once("header.php");
+<?php 
+require_once("header.php");
 session_start();
 ?>
 <link rel="stylesheet" type="text/css" href="Style.CSS">
@@ -20,8 +21,8 @@ session_start();
 			<span id="passwordError" class="error"><?=$_SESSION['messages']['password']?></span>
 			<?php } ?>
 			<button type="submit" value="Login">Login</button>
-		</form>
-	</body>
+	</form>
+</body>
 <?php 
 	require_once("Footer.php");
 ?>
