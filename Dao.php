@@ -1,12 +1,24 @@
 <?php
 class Dao {
 	private $host = "us-cdbr-iron-east-01.cleardb.net";
-	private $db = "heroku_b0950797e204108";
+	private $dbname = "heroku_b0950797e204108";
 	private $user = "b0d08fe860ed9e";
-	private $pass = "e9495ff9";
+	private $password = "e9495ff9";
 
-	public function getConnection () {
-		return new PDO("mysql:host={$this->host};dbname={$this->db}")
+	// public function getConnection () {
+	// 	return new PDO("mysql:host={$this->host};dbname={$this->db}")
+	// }
+
+	
+	private function getConnection() {
+	$conn = new PDO ( "mysql:dbname={$this->dbname};host={$this->host};", "$this->user", "$this->password" );
+	$conn->setAttribute ( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
+	return $conn;
+	}
+
+	public function getConnectionStatus() {
+	$conn = $this->getConnection();
+	return $conn->getAttribute(constant("PDO::ATTR_CONNECTION_STATUS"));
 	}
 
 	public function saveLogin($name, $password) {
