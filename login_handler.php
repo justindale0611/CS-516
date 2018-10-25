@@ -1,5 +1,5 @@
 <?php
-//require_once("Dao.php");
+require_once("Dao.php");
 session_start();
 echo "hello 1";
   $username = $_POST['username'];
