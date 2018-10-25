@@ -1,7 +1,7 @@
 <?php
-//require_once("Dao.php");
-//session_start();
-  echo "hello 1";
+require_once("Dao.php");
+session_start();
+echo "hello 1";
   // $username = $_POST['username'];
   // $password = $_POST['password'];
   // $_SESSION['presets']['username'] = $username;
