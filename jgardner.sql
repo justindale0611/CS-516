@@ -21,6 +21,7 @@ CREATE TABLE IF NOT exists Parents(
     email VARCHAR (256) NOT NULL
 );
 
-INSERT INTO users (username, password)
-VALUES ('justingardner', 'wrestling890');
+DROP TABLE users;
+INSERT INTO users(id, username, password)
+VALUES (1, 'justingardner', 'wrestling890');
 

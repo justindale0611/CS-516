@@ -28,19 +28,21 @@ class Dao {
 	// }
 
 	//MAYBE SOMETHING IS WRONG HERE
-	public function validateUser($username, $password) {
+	public function validateUser($username, $password) {//error
 		$conn = $this->getConnection();
-		$stmt = $conn->prepare("SELECT username, password FROM users WHERE username = :username");
+		$stmt = $conn->prepare("SELECT username FROM users WHERE username = :username");
 
 		$stmt->bindParam(':username', $username);	
 		$stmt->execute();
 
 		$user = $stmt->fetch();
 		if ($user) {
+
 			$digest = $user['password'];
 			if (password_verify($password, $digest)) {
 				return array('username' => $user['username'], 'id' => $user['id']);
 			}
+			return true;
 		} 
 		return false;
 	}
