@@ -31,10 +31,10 @@ if (empty($errors)) {
     $dao = new Dao();
     $user = $dao->validateUser($username, $password);//error
     if ($user) {
-      header("Location: Home.php");
+      header("Location: Home.PHP");
     } else {
       //$errors['message'] = "Invalid username or password";
-      header("Location: WrestlerLogin.PHP");
+      header("Location: WrestlerLogin.php");
     }
   } catch (Exception $e) {
     // $errors['message' = "Something went wrong. Please come back later."]
