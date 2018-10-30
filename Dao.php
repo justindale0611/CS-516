@@ -30,7 +30,7 @@ class Dao {
 	//MAYBE SOMETHING IS WRONG HERE
 	public function validateUser($username, $password) {
 		$conn = $this->getConnection();
-		$stmt = $conn->prepare("SELECT id, username, password FROM users WHERE username = :username");
+		$stmt = $conn->prepare("SELECT username, password FROM users WHERE username = :username");
 
 		$stmt->bindParam(':username', $username);	
 		$stmt->execute();
