@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <?php 
-	require("header.php");
+	include("header.php");
 ?>
 <link rel="stylesheet" type="text/css" href="Style.CSS">
 <body>
