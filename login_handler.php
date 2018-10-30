@@ -40,6 +40,7 @@ if (empty($errors)) {
     // $errors['message' = "Something went wrong. Please come back later."]
     // header("Location: WrestlerLogin.php");
     echo "somthing is wrong 1";
+    echo $e;
   }
 } else {
   // header("Location: WrestlerLogin.php");
