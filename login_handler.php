@@ -31,7 +31,7 @@ if (empty($errors)) {
     $dao = new Dao();
     $user = $dao->validateUser($username, $password);//error
     if ($user) {
-      header("Location: Home.PHP");
+      header("Location: Home.php");
     } else {
       //$errors['message'] = "Invalid username or password";
       header("Location: WrestlerLogin.php");
