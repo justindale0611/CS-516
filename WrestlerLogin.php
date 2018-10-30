@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <?php 
-require_once("header.php");
+require("header.php");
 session_start();
 ?>
 <link rel="stylesheet" type="text/css" href="Style.CSS">
