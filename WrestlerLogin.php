@@ -20,8 +20,8 @@ session_start();
 			<?php if(isset($_SESSION['errors']['password'])) { ?>
 			<span id="passwordError" class="error"><?=$_SESSION['messages']['password']?></span>
 			<?php } ?>
-			<button type="submit" value="Login" name="LoginButton"></button>
-			<button type="submit" value="Create Account" name="CreatAccountButton"></button>
+			<button type="submit" value="Login" name="LoginButton">Login</button>
+			<button type="submit" value="Create Account" name="CreatAccountButton">Create Account</button>
 	</form>
 </body>
 <?php 
