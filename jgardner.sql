@@ -1,7 +1,8 @@
 use heroku_b0950797e204108;
+DROP TABLE IF EXISTS users;
 
-CREATE TABLE IF NOT exists users(
-	id int PRIMARY KEY,
+CREATE TABLE users(
+	id int auto_increment PRIMARY KEY, 
     username VARCHAR(130) NOT NULL,
     password VARCHAR (65) NOT NULL
 );
@@ -21,7 +22,6 @@ CREATE TABLE IF NOT exists Parents(
     email VARCHAR (256) NOT NULL
 );
 
-DROP TABLE users;
 INSERT INTO users(id, username, password)
 VALUES (1, 'justingardner', 'wrestling890');
 
