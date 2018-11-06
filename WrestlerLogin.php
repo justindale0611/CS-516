@@ -21,7 +21,7 @@ session_start();
 			<span id="passwordError" class="error"><?=$_SESSION['messages']['password']?></span>
 			<?php } ?>
 			<button type="submit" value="Login" name="LoginButton"></button>
-			<button type="create" value="create account" name="CreatAccountButton"></button>
+			<button type="submit" value="Create Account" name="CreatAccountButton"></button>
 	</form>
 </body>
 <?php 
