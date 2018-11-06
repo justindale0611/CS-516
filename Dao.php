@@ -30,7 +30,7 @@ class Dao {
 	//MAYBE SOMETHING IS WRONG HERE
 	public function validateUser($username, $password) {//error
 		$conn=$this->getConnection();
-		$q=$conn->prepare("select username from user where username='$username' and password='$password'");
+		$q=$conn->prepare("select username from users where username='$username' and password='$password'");
 		$q->bindParam(":username", $username);
 		$q->bindParam(":password", $password);
 		$q->setFetchMode(PDO::FETCH_ASSOC);
