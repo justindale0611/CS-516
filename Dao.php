@@ -16,16 +16,26 @@ class Dao {
 		return $conn->getAttribute(constant("PDO::ATTR_CONNECTION_STATUS"));
 	}
 
-	// public function saveLogin($name, $password) {
-	// 	$connection =$this->getConnection();
-	// 	 $saveQuery =
-	//         "INSERT INTO users (name, password)
-	//         VALUES (:name, :comment)";
-	//     $q = $conn->prepare($saveQuery);
-	//     $q->bindParam(":name", $name);
-	//     $q->bindParam(":password", $password);
-	//     $q->execute();
-	// }
+	public function saveLogin($username, $password) {
+		$connection =$this->getConnection();
+		 $saveQuery =
+	        "INSERT INTO users (username, password)
+	        VALUES (:username, :password)";
+	    $q = $conn->prepare($saveQuery);
+	    $q->bindParam(":username", $username);
+	    $q->bindParam(":password", $password);
+	    $q->execute();
+	}
+
+	public function getUsername($username){
+		$conn=$this->getConnection();
+		$q=$conn->prepare("SELECT username FROM users WHERE username='$username'");
+		$q->bindParam(":username", $username);
+		$q->setFetchMode(PDO::FETCH_ASSOC);
+		$q->execute();
+		$result=$q->fetchAll();
+		return $result;
+	}
 
 	//MAYBE SOMETHING IS WRONG HERE
 	public function validateUser($username, $password) {//error
