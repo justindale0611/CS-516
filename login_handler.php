@@ -33,7 +33,13 @@ if (empty($errors)) {
     //Login
     if (isset ($_POST['LoginButton'])) {
       $user = $dao->validateUser($username, $password);
-    
+      if ($user) {
+          header('Location: Home.php');
+          exit;
+      } else {
+          header('Location: Schedule.php');
+          exit;
+      }
     //Create Account
     } else if (isset($_POST['CreateAccountButton'])) {
       $user=$dao->getUsername($username);   
