@@ -29,22 +29,14 @@ class Dao {
 
 	//MAYBE SOMETHING IS WRONG HERE
 	public function validateUser($username, $password) {//error
-		$conn = $this->getConnection();
-		$stmt = $conn->prepare("SELECT username FROM users WHERE username = :username");
-
-		$stmt->bindParam(':username', $username);	
-		$stmt->execute();
-
-		$user = $stmt->fetch();
-		if ($user) {
-
-			$digest = $user['password'];
-			if (password_verify($password, $digest)) {
-				return array('username' => $user['username'], 'id' => $user['id']);
-			}
-			return true;
-		} 
-		return false;
+		$conn=$this->getConnection();
+		$q=$conn->prepare("select username from user where username='$username' and password='$password'");
+		$q->bindParam(":username", $username);
+		$q->bindParam(":password", $password);
+		$q->setFetchMode(PDO::FETCH_ASSOC);
+		$q->execute();
+		$result=$q->fetchAll();
+		return $result;
 	}
 }
 ?>
