@@ -12,5 +12,7 @@
 	<li class="nav-item"><a href ="Schedule.php">Schedule</a></li>
 	<li class="nav-item"><a href ="WrestlerLogin.php">Wrestler Login</a></li>
 	<li class="nav-item"><a href ="CoachingStaff.php">Coaching Staff</a></li>
+	<li class="nav-item"><a href ="www.google.com">Login Out</a></li>
+
 </ul>
 </div>
