@@ -10,10 +10,8 @@
 </h1>
 <div id="navigation">
 <ul class="nav">
-	<li class="nav-item"><a href ="index.php">Home</a></li>
-	<li class="nav-item"><a href ="Schedule.php">Schedule</a></li>
+	<li class="nav-item"><a href ="CoachingStaff.php">Home</a></li>
 	<li class="nav-item"><a href ="WrestlerLogin.php">Wrestler Login</a></li>
-	<li class="nav-item"><a href ="CoachingStaff.php">Coaching Staff</a></li>
 </ul>
 </div>
 
