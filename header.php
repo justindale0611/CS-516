@@ -10,9 +10,9 @@
 <ul class="nav">
 	<li class="nav-item"><a href ="Home.php">Home</a></li>
 	<li class="nav-item"><a href ="Schedule.php">Schedule</a></li>
-	<li class="nav-item"><a href ="WrestlerLogin.php">Wrestler Login</a></li>
+	<!-- <li class="nav-item"><a href ="WrestlerLogin.php">Wrestler Login</a></li> -->
 	<li class="nav-item"><a href ="CoachingStaff.php">Coaching Staff</a></li>
-	<li class="nav-item"><a href ="https://www.google.com/">Login Out</a></li>
+	<li class="nav-item"><a href ="CoachingStaff.php">Login Out</a></li>
 	<li class="nav-item"><a href ="forms.php">Wrestler's Forms</a></li>
 
 </ul>
