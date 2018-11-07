@@ -19,6 +19,10 @@ if (empty($password)) {
   $_SESSION['errors']['password'] = "Password is required.";
   $bad = true;
 }
+if (!preg_match('~[0-9]~', $password)||!preg_match('~[a-z]~', $password)) {
+    $_SESSION['message'][] = "Password must have at least one number and one lowercase letter."; 
+    $bad=true;
+  }
 
 if ($bad) {
   header("Location: WrestlerLogin.php");
