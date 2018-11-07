@@ -8,7 +8,7 @@
 </h1>
 <div id="navigation">
 <ul class="nav">
-	<li class="nav-item"><a href ="Home.PHP">Home</a></li>
+	<li class="nav-item"><a href ="Home.php">Home</a></li>
 	<li class="nav-item"><a href ="Schedule.php">Schedule</a></li>
 	<li class="nav-item"><a href ="WrestlerLogin.php">Wrestler Login</a></li>
 	<li class="nav-item"><a href ="CoachingStaff.php">Coaching Staff</a></li>
