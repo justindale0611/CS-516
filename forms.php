@@ -13,22 +13,22 @@
 			<?php } ?> -->
 
 			<label for="wrestlersphone">Wrestler's Phone Number:</label><br>
-			<input type="text" name="wrestlersphone" required><br>
+			<input type="phone" name="wrestlersphone" required><br>
 			<!-- <?php if(isset($_SESSION['errors']['password'])) { ?>
 			<span id="passwordError" class="error"><?=$_SESSION['messages']['password']?></span>
 			<?php } ?> -->
 
 			<label for="wrestlersemail">Wrestler's Email:</label><br>
-			<input type="text" name="wrestlersemail" required><br>
+			<input type="email" name="wrestlersemail" required><br>
 
 			<label for="parentsname">Emergency Contact:</label><br>
 			<input type="text" name="parentsname" required><br>
 
 			<label for="parentsphone">Emergency Phone Number:</label><br>
-			<input type="text" name="wrestlersphone" required><br>
+			<input type="phone" name="wrestlersphone" required><br>
 
 			<label for="paretsemail">Emergency Email:</label><br>
-			<input type="text" name="paretsemail" required><br>
+			<input type="email" name="paretsemail" required><br>
 
 
 			<button type="submit" value="Submit" name="SubmitForms">Submit</button>
