@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
-<?php 
+<!-- <?php 
 	include "header.php";
-?>
+?> -->
 <link rel="stylesheet" type="text/css" href="Style.CSS">
 <body>
 <p>Welcome to Borah High School's wrestling page. Please Log in to begin. 
