@@ -31,8 +31,8 @@
 			<input type="text" name="paretsemail" required><br>
 
 
-			<button type="submit" value="Login" name="LoginButton">Login</button>
-			<button type="submit" value="Create Account" name="CreatAccountButton">Create Account</button>
+			<button type="submit" value="Submit" name="SubmitForms">Submit</button>
+			
 
 </p>
 </body>
