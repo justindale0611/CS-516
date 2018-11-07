@@ -13,7 +13,7 @@
 	<li class="nav-item"><a href ="WrestlerLogin.php">Wrestler Login</a></li>
 	<li class="nav-item"><a href ="CoachingStaff.php">Coaching Staff</a></li>
 	<li class="nav-item"><a href ="https://www.google.com/">Login Out</a></li>
-	<li class="nav-item"><a href ="https://www.google.com/">Login Out</a></li>
+	<li class="nav-item"><a href ="forms.php">Login Out</a></li>
 
 </ul>
 </div>
