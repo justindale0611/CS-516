@@ -15,7 +15,7 @@ $bad = false;
 if (empty($wname)) {
     $bad = true;
     echo $bad."wname";
-    header("Home.php");
+    header("Location: Home.php");
     exit;
 
 }
