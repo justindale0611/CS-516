@@ -29,8 +29,8 @@
 			<label for="parentsphone">Emergency Phone Number:</label><br>
 			<input type="tel" name="parentsphone" required><br>
 
-			<label for="paretsemail">Emergency Email:</label><br>
-			<input type="email" name="paretsemail" required><br>
+			<label for="parentsemail">Emergency Email:</label><br>
+			<input type="email" name="parentsemail" required><br>
 
 
 			<button type="submit" value="Submit" name="SubmitForms">Submit</button>
