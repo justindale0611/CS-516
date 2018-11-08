@@ -19,7 +19,7 @@ class Dao
         $q    = $conn->prepare("SELECT * FROM users WHERE username = :username");
         $q->bindParam(':username', $username);
         $q->execute();
-        if ($q->fetch()) {
+        if (!empty($q->fetch())) {
             return true;
         } else {
             return false;
