@@ -12,6 +12,7 @@ session_start();
 			if(isset($_SESSION['errors']['password'])){
 				echo $_SESSION['errors']['password'];
 			}
+		?>
 	<br>
 	<form method="POST" action="login_handler.php">
 			<label for="username">Username:</label><br>
