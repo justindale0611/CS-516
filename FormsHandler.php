@@ -58,8 +58,10 @@ if (empty($pemail)) {
     //exit;
 //}
 
-//addWrestler($wname, $wphone, $wemail);
-addParent($pname, $wname, $pphone, $pemail);
+$dao = new Dao();
+
+$dao->addWrestler($wname, $wphone, $wemail);
+$dao->addParent($pname, $wname, $pphone, $pemail);
 header("Location: Home.php");
 exit;
 
