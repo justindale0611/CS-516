@@ -49,7 +49,7 @@ if (empty($errors)) {
             if ($exist) {
                 header('Location: Schedule.php');
             } else {
-                $dao->createAccount($username, $password);
+                //$dao->createAccount($username, $password);
                 header('Location: Home.php');
             }
         }
