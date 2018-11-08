@@ -33,34 +33,30 @@ if ($bad) {
 if (empty($errors)) {
   try {
     $dao = new Dao();
-    
+
     //Login
     if (isset ($_POST['LoginButton'])) {
       $user = $dao->validateUser($username, $password);
       if ($user) {
           header('Location: Home.php');
-          exit;
       } else {
           header('Location: Schedule.php');
-          exit;
       }
+
     //Create Account
     } else if (isset($_POST['CreateAccountButton'])) {
       $exist = $dao->userExists($username);
       if($exist) {
         header('Location: Schedule.php');         
       } else {
-        $dao->createAccount($username, $password);
-        //$_SESSION['logged_in']=true;
+        //$dao->createAccount($username, $password);
         header('Location: Home.php');
       }
     }
 
   } catch (Exception $e) {
-    // $errors['message' = "Something went wrong. Please come back later."]
-    // header("Location: WrestlerLogin.php");
-    echo "somthing is wrong 1";
-    echo $e;
+    header('Location: Schedule.php');
   }
 }
+
 ?>
