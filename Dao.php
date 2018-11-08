@@ -11,12 +11,24 @@ class Dao {
 		return $conn;
 	}
 
+	public function userExists($username) {
+		$conn = $this->getConnection();
+		$q = $conn->prepare("SELECT * FROM users WHERE username = :username");
+		$q->bindParam(':username', $username);
+		$q->execute():
+		if ($q->fetch()) {
+			return true;
+		} else {
+			return false;
+		}
+	}
+
 	public function getConnectionStatus() {
 		$conn = $this->getConnection();
 		return $conn->getAttribute(constant("PDO::ATTR_CONNECTION_STATUS"));
 	}
 
-	public function saveLogin($username, $password) {
+	public function createAccount($username, $password) {
 		$connection =$this->getConnection();
 		 $saveQuery =
 	        "INSERT INTO users (username, password)
