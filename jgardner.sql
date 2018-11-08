@@ -6,17 +6,17 @@ CREATE TABLE users(
     username VARCHAR(130) NOT NULL,
     password VARCHAR (65) NOT NULL
 );
+DROP TABLE IF EXISTS wrestlers;
 
 CREATE TABLE IF NOT exists wrestlers(
-	firstname VARCHAR(30) NOT NULL,
-    lastname VARCHAR (30) NOT NULL,
+	wrestlersname VARCHAR(30) NOT NULL,
     phone	VARCHAR (9) NOT NULL,
     email VARCHAR (256) NOT NULL
 );
+DROP TABLE IF EXISTS Parents;
 
 CREATE TABLE IF NOT exists Parents(
-    firstname VARCHAR(30) NOT NULL,
-    lastname VARCHAR (30) NOT NULL,
+    EmergencyContact VARCHAR (30) NOT NULL,
     wrestlersname VARCHAR (60) NOT NULL,
     phone	VARCHAR (9) NOT NULL,
     email VARCHAR (256) NOT NULL
