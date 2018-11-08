@@ -37,7 +37,7 @@ class Dao
         $connection = $this->getConnection();
         $saveQuery  = "INSERT INTO users (username, password)
             VALUES (:username, :password)";
-        $q          = $conn->prepare($saveQuery);
+        $q   = $conn->prepare($saveQuery);
         $q->bindParam(":username", $username);
         $q->bindParam(":password", $password);
         $q->execute();

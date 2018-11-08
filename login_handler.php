@@ -42,6 +42,7 @@ if (empty($errors)) {
             } else {
                 header('Location: Schedule.php');
             }
+            
             //Create Account
         } else if (isset($_POST['CreateAccountButton'])) {
             $exist = $dao->userExists($username);
@@ -51,7 +52,6 @@ if (empty($errors)) {
                 $dao->createAccount($username, $password);
                 header('Location: Home.php');
             }
-
         }
         
     }
