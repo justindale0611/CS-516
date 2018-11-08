@@ -40,21 +40,21 @@ if (empty($pname)) {
     $bad = true;
 }
 if (empty($pphone)) {
-    $_SESSION['formError'] = "Name is required.";
     $bad = true;
 }
 if (empty($pemail)) {
     $bad = true;
 }
 
-if ($bad) {
-    header("Location: forms.php");
-    exit;
-}else{
-	addWrestler($wname, $wphone, $wemail);
-	addParent($pname, $wname, $pphone, $pemail);
-	 header("Location: Home.php");
-    exit;
-}
+//if ($bad) {
+  //  header("Location: forms.php");
+    //exit;
+//}
+
+addWrestler($wname, $wphone, $wemail);
+addParent($pname, $wname, $pphone, $pemail);
+header("Location: Home.php");
+exit;
+
 
 ?>
