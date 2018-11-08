@@ -42,8 +42,6 @@ if (empty($errors)) {
             } else {
                 header('Location: Schedule.php');
             }
-            echo "here";
-            exit;
             //Create Account
         } else {
             $exist = $dao->userExists($username);
