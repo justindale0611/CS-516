@@ -42,6 +42,28 @@ class Dao
         $q->execute();
     }
     
+
+    public function addWrestler($wname, $wphone, $wemail){
+        $connection = $this->getConnection();
+        $saveQuery  = "INSERT INTO wrestlers (wrestlersname, phone, email) VALUES (:name, :phone, :email)";
+        $q   = $connection->prepare($saveQuery);
+        $q->bindParam(":name", $wname);
+        $q->bindParam(":phone", $wphone);
+        $q->bindParam(":email", $wemail);
+        $q->execute();
+    }
+
+	public function addParent($pname, $wname, $pphone, $pemail){
+    	$connection = $this->getConnection();
+        $saveQuery  = "INSERT INTO Parents (EmergencyContact, wrestlersname, phone, email) VALUES (:contact, :name, :phone, :email)";
+        $q   = $connection->prepare($saveQuery);
+        $q->bindParam(":contact", $pname);        
+        $q->bindParam(":name", $wname);
+        $q->bindParam(":phone", $pphone);
+        $q->bindParam(":email", $pemail);
+        $q->execute();
+	}
+
     // public function getUsername($username){
     //     $conn=$this->getConnection();
     //     $q=$conn->prepare("SELECT username FROM users WHERE username='$username'");

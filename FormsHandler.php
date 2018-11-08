@@ -43,6 +43,9 @@ if (empty($pemail)) {
 if ($bad) {
     header("Location: forms.php");
     exit;
+}else{
+	addWrestler($wname, $wphone, $wemail);
+	addParent($pname, $wname, $pphone, $pemail);
 }
 
 ?>
