@@ -37,8 +37,7 @@ class Dao {
 		return $result;
 	}
 
-	//MAYBE SOMETHING IS WRONG HERE
-	public function validateUser($username, $password) {//error
+	public function validateUser($username, $password) {
 		$conn=$this->getConnection();
 		$q=$conn->prepare("select username from users where username='$username' and password='$password'");
 		$q->bindParam(":username", $username);

@@ -53,7 +53,7 @@ if (empty($errors)) {
         header('Location: Home.php');
         exit;    
       } else {
-        header('Location: index.php');
+        header('Location: Schedule.php');
         exit;
       }
     }
