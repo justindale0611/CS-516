@@ -47,6 +47,8 @@ if (empty($pphone)) {
 if (empty($pemail)) {
     $bad = true;
         echo $bad."pemail";
+            header("Location: Home.php");
+
         exit;
 
 }
