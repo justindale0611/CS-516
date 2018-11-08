@@ -53,10 +53,10 @@ if (empty($pemail)) {
 
 }
 
-//if ($bad) {
-  //  header("Location: forms.php");
-    //exit;
-//}
+if ($bad) {
+   header("Location: forms.php");
+    exit;
+}
 
 $dao = new Dao();
 
