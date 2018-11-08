@@ -1,5 +1,13 @@
 <!DOCTYPE html>
 <html>
+
+<?php
+	if(!isset($_SESSION['login'])){
+		session_destroy();
+		header("Location: WrestlerLogin.php");
+	}
+?>
+
 <head>
 	<title>Borah High School Wrestling</title>
 	<link rel="stylesheet" href="Style.CSS">

@@ -38,6 +38,7 @@ if (empty($errors)) {
         if (isset($_POST['LoginButton'])) {
             $user = $dao->validateUser($username, $password);
             if ($user) {
+                $_SESSION['login'] = true;
                 header('Location: Home.php');
             } else {
                 header('Location: Schedule.php');
@@ -49,6 +50,7 @@ if (empty($errors)) {
             if ($exist) {
                 header('Location: Schedule.php');
             } else {
+                $_SESSION['login']= true;
                 $dao->createAccount($username, $password);
                 header('Location: Home.php');
             }

@@ -11,6 +11,7 @@ session_start();
 		<?php 
 			if(isset($_SESSION['errors']['password'])){
 				echo $_SESSION['errors']['password'];
+				unset($_SESSION['errors']);
 			}
 		?>
 	<br>
