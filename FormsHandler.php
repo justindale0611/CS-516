@@ -58,7 +58,7 @@ if (empty($pemail)) {
     //exit;
 //}
 
-addWrestler($wname, $wphone, $wemail);
+//addWrestler($wname, $wphone, $wemail);
 //addParent($pname, $wname, $pphone, $pemail);
 header("Location: Home.php");
 exit;
