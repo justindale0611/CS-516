@@ -47,7 +47,7 @@ if (empty($errors)) {
     //Create Account
     } else if (isset($_POST['CreateAccountButton'])) {
       $user=$dao->getUsername($username);   
-      print $user;
+      echo $user;
       // if(empty($user)) {     
       //   $dao->saveLogin($username, $password);
       //   $_SESSION['logged_in']=true;
