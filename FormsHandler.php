@@ -15,32 +15,38 @@ $bad = false;
 if (empty($wname)) {
     $bad = true;
     echo $bad."wname";
+    exit;
 
 }
 if (empty($wphone)) {
     $bad = true;
         echo $bad."wphone";
+        exit;
 
 }
 
 if (empty($wemail)) {
     $bad = true;
         echo $bad."wemail";
+        exit;
 
 }
 if (empty($pname)) {
     $bad = true;
         echo $bad."pname";
+        exit;
 
 }
 if (empty($pphone)) {
     $bad = true;
         echo $bad."pphone";
+        exit;
 
 }
 if (empty($pemail)) {
     $bad = true;
         echo $bad."pemail";
+        exit;
 
 }
 
