@@ -14,25 +14,34 @@ $pemail = $_POST['parentsemail'];
 $bad = false;
 if (empty($wname)) {
     $bad = true;
+    echo $bad."wname";
 
 }
 if (empty($wphone)) {
     $bad = true;
-    header("Location: forms.php");
-    exit;
+        echo $bad."wphone";
+
 }
 
 if (empty($wemail)) {
     $bad = true;
+        echo $bad."wemail";
+
 }
 if (empty($pname)) {
     $bad = true;
+        echo $bad."pname";
+
 }
 if (empty($pphone)) {
     $bad = true;
+        echo $bad."pphone";
+
 }
 if (empty($pemail)) {
     $bad = true;
+        echo $bad."pemail";
+
 }
 
 //if ($bad) {
