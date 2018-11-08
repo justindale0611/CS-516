@@ -20,7 +20,7 @@ if (empty($password)) {
     $bad                            = true;
 }
 if (!preg_match('~[0-9]~', $password) || !preg_match('~[a-z]~', $password)) {
-    $_SESSION['errors'][] = "Password must have at least one number and one lowercase letter.";
+    $_SESSION['errors']['password'] = "Password must have at least one number and one lowercase letter.";
     $bad                   = true;
 }
 
