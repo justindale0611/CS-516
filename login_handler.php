@@ -47,12 +47,13 @@ if (empty($errors)) {
     //Create Account
     } else if (isset($_POST['CreateAccountButton'])) {
       $user=$dao->getUsername($username);   
-      if(empty($user)) {     
-        $dao->saveLogin($username, $password);
-        $_SESSION['logged_in']=true;
-        header('Location: Home.php');
-        exit;    
-      }
+      print $user;
+      // if(empty($user)) {     
+      //   $dao->saveLogin($username, $password);
+      //   $_SESSION['logged_in']=true;
+      //   header('Location: Home.php');
+      //   exit;    
+      // }
     }
 
   } catch (Exception $e) {
