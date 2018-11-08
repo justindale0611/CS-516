@@ -8,6 +8,8 @@ $wemail = $_POST['wrestlersemail'];
 $pname = $_POST['parentsname'];
 $pphone = $_POST['parentsphone'];
 $pemail = $_POST['parentsemail'];
+echo $wname;
+exit;
 
 $_SESSION['presets']['username'] = $username;
 
@@ -36,7 +38,6 @@ if (empty($pphone)) {
     $bad = true;
 }
 if (empty($pemail)) {
-    $_SESSION['formError'] = "Name is required.";
     $bad = true;
 }
 
