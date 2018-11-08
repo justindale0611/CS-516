@@ -2,6 +2,20 @@
 require_once("Dao.php");
 session_start();
 
+$wname = $_POST['wrestlersname'];
+$wphone = $_POST['wrestlersphone'];
+$wemail = $_POST['wrestlersemail'];
+$pname = $_POST['parentsname'];
+$pphone = $_POST['parentsphone'];
+$pemail = $_POST['parentsemail'];
+echo $wname."    ";
+echo $wphone."    ";
+echo $wemail."    ";
+echo $pname."    ";
+echo $pphone."    ";
+echo $pemail."    ";
+
+exit;
 
 $_SESSION['presets']['username'] = $username;
 
