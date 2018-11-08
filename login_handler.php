@@ -1,6 +1,6 @@
 <?php
 require_once("Dao.php");
-session_start();
+//session_start();
 
 $username = $_POST['username'];
 $password = $_POST['password'];
@@ -48,9 +48,9 @@ if (empty($errors)) {
     } else if (isset($_POST['CreateAccountButton'])) {
 
       // if(empty($user)) {     
-        $dao->saveLogin($username, $password);
+      $dao->saveLogin($username, $password);
       //   $_SESSION['logged_in']=true;
-      header('Location: Home.php');
+      header('Location: index.php');
       //   exit;    
       // }
     }
