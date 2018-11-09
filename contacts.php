@@ -38,16 +38,16 @@
 		$wrestler = $dao->getWrestler();
 	?>
 <div>
-	<table>
+	<table border="1">
 
     		<?php
       		foreach ($wrestler as $wrestler)
         {
           echo "<tr>
                   <td>
-                  Name: " . htmlentities($wrestler['wrestlersname']) . "<br>
-                  Phone: " . htmlentities($wrestler['phone']) . "<br>
-                  Gender: " . htmlentities($wrestler['email']) . "<br>
+                  Name: " . ($wrestler['wrestlersname']) . "<br>
+                  Phone: " . ($wrestler['phone']) . "<br>
+                  Gender: " . ($wrestler['email']) . "<br>
 				  </td>
         		</tr>";
         }
