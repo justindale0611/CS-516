@@ -15,7 +15,7 @@
 	<link rel="icon" href="Logo.jpg" type="image/gif" sizes="16x16">
 </head>
 <h1>
-	<a href="https://www.google.com/"><img src="transparent.png" alt="Borah Wrestler" height="25%" width="25%"></a>
+	<img src="transparent.png" alt="Borah Wrestler" height="25%" width="25%">
 </h1>
 <div id="navigation">
 <ul class="nav">
