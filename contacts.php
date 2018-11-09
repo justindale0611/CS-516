@@ -30,6 +30,8 @@
 <link rel="stylesheet" type="text/css" href="Style.CSS">
 <body>
 
+	PUT TABLE HERE 
+
 	<?php require_once "Dao.php";
 		$dao = new Dao();
 		$wrestler = $dao->getWrestler();
