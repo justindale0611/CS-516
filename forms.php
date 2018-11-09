@@ -1,8 +1,15 @@
 <!DOCTYPE html>
 <html>
-<?php 
+<?php
+	session_start();
+	if(!isset($_SESSION['login'])){
+		session_destroy();
+		header("Location: WrestlerLogin.php");
+	}
 	include "header.php";
 ?>
+	
+
 <link rel="stylesheet" type="text/css" href="Style.CSS">
 <body>
 <p>Please fill out the following information. The information obtained here is for coaches only <br>
