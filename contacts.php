@@ -37,7 +37,7 @@
 		$dao = new Dao();
 		$wrestler = $dao->getWrestler();
 	?>
-
+<div>
 	<table>
 
     		<?php
@@ -53,6 +53,7 @@
         }
     		?>
   	</table>
+</div>
 </p>
 </body>
 
