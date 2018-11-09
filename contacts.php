@@ -29,6 +29,7 @@
 
 <link rel="stylesheet" type="text/css" href="Style.CSS">
 <body>
+	<p>
 
 	PUT TABLE HERE 
 
@@ -52,7 +53,7 @@
         }
     		?>
   	</table>
-
+</p>
 </body>
 
 <?php 
