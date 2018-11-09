@@ -21,10 +21,7 @@
 <ul class="nav">
 	<li class="nav-item"><a href ="Home.php">Home</a></li>
 	<li class="nav-item"><a href ="Schedule.php">Schedule</a></li>
-	<!-- <li class="nav-item"><a href ="WrestlerLogin.php">Wrestler Login</a></li> -->
-<!-- 	<li class="nav-item"><a href ="CoachingStaff.php">Coaching Staff</a></li>
- -->	
- <li class="nav-item"><a href ="LogoutHandler.php">Login Out</a></li>
+	<li class="nav-item"><a href ="LogoutHandler.php">Login Out</a></li>
 	<li class="nav-item"><a href ="forms.php">Wrestler's Forms</a></li>
 
 </ul>
@@ -32,8 +29,28 @@
 
 <link rel="stylesheet" type="text/css" href="Style.CSS">
 <body>
-<p>PUT TABLE HERE!!!
-</p>
+
+	<?php require_once "Dao.php";
+		$dao = new Dao();
+		$wrestler = $dao->getWrestler();
+	?>
+
+	<table>
+
+    		<?php
+      		foreach ($wrestler as $wrestler)
+        {
+          echo "<tr>
+                  <td>
+                  Name: " . htmlentities($wrestler['wrestlersname']) . "<br>
+                  Phone: " . htmlentities($wrestler['phone']) . "<br>
+                  Gender: " . htmlentities($wrestler['email']) . "<br>
+				  </td>
+        		</tr>";
+        }
+    		?>
+  	</table>
+
 </body>
 
 <?php 

@@ -64,16 +64,7 @@ class Dao
         $q->execute();
 	}
 
-    // public function getUsername($username){
-    //     $conn=$this->getConnection();
-    //     $q=$conn->prepare("SELECT username FROM users WHERE username='$username'");
-    //     $q->bindParam(":username", $username);
-    //     $q->setFetchMode(PDO::FETCH_ASSOC);
-    //     $q->execute();
-    //     $result=$q->fetchAll();
-    //     return $result;
-    // }
-    
+
     public function validateUser($username, $password)
     {
         $conn = $this->getConnection();
@@ -85,5 +76,13 @@ class Dao
         $result = $q->fetchAll();
         return $result;
     }
+        public function getWrestler(){
+      $conn=$this->getConnection();
+        $q=$conn->prepare("SELECT wrestlersname, phone, email, from wrestlers");
+        $q->setFetchMode(PDO::FETCH_ASSOC);
+        $q->execute();
+        $result=$q->fetchAll();
+        return $result;
+      }
 }
 ?>

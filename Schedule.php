@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html>
+
 <?php 
-session_start();
+ 	session_start();
 	if(!isset($_SESSION['login'])){
 		session_destroy();
 		header("Location: WrestlerLogin.php");
 	}
 require_once("header.php");?>
+
 <link rel="stylesheet" type="text/css" href="Style.CSS">
 
 <body  id = schedule>
