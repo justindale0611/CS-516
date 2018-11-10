@@ -48,12 +48,10 @@
       		foreach ($wrestler as $wrestler)
         {
           echo "<tr>
-                  <td> 
-                  Name: " . ($wrestler['wrestlersname']) . "
-                  Phone: " . ($wrestler['phone']) ."
-                  Gender: " . ($wrestler['email']) . "<br>
-				  </td>
-        		</tr>";
+                  <td>Name: " . ($wrestler['wrestlersname']) . "</td>
+                  <td>Phone: " . ($wrestler['phone']) ."</td>
+                  <td>Gender: " . ($wrestler['email']) . "</td>
+				</tr>";
         }
     		?>
   	</table>
