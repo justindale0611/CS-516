@@ -47,13 +47,8 @@
     		<?php
       		foreach ($wrestler as $wrestler)
         {
-          echo "<tr>
-                  <td> 
-                  Name: " . ($wrestler['wrestlersname']) . "
-                  Phone: " . ($wrestler['phone']) ."
-                  Gender: " . ($wrestler['email']) . "<br>
-				  </td>
-        		</tr>";
+          echo 
+          "<tr><td>($wrestler['wrestlersname'])</td><td>($wrestler['phone'])</td><td>($wrestler['email'])/tr>;
         }
     		?>
   	</table>
