@@ -48,7 +48,7 @@
         {
           echo "<tr>
                   <td> 
-                  Name: " . ($wrestler['wrestlersname'])  "
+                  Name: " . ($wrestler['wrestlersname']) . "
                   Phone: " . ($wrestler['phone']) ."
                   Gender: " . ($wrestler['email']) . "<br>
 				  </td>
