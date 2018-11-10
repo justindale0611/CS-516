@@ -44,13 +44,12 @@
 	<table border="1">
 
     		<?php
-    		echo<tr><td>Wrestler's Name</td><td>Phone</td><td>email</td></tr>;
       		foreach ($wrestler as $wrestler)
         {
           echo "<tr>
-                  <td>
-                  Name: " . ($wrestler['wrestlersname']) . "<br>
-                  Phone: " . ($wrestler['phone']) . "<br>
+                  <td> 
+                  Name: " . ($wrestler['wrestlersname'])  "
+                  Phone: " . ($wrestler['phone']) ."
                   Gender: " . ($wrestler['email']) . "<br>
 				  </td>
         		</tr>";
