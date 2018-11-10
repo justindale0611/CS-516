@@ -78,7 +78,7 @@ class Dao
     }
         public function getWrestler(){
       $conn=$this->getConnection();
-        $q=$conn->prepare("SELECT wrestlersname, phone, email, from wrestlers");
+        $q=$conn->prepare("SELECT wrestlersname, phone, email from wrestlers");
         $q->setFetchMode(PDO::FETCH_ASSOC);
         $q->execute();
         $result=$q->fetchAll();

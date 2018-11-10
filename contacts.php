@@ -36,6 +36,10 @@
 	<?php require_once "Dao.php";
 		$dao = new Dao();
 		$wrestler = $dao->getWrestler();
+		if(empty($wrestler)){
+			echo "IT IS EMPTY!!!!!!!";
+			
+		}
 	?>
 <div>
 	<table border="1">
