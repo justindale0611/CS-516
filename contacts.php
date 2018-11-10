@@ -44,6 +44,7 @@
 	<table border="1">
 
     		<?php
+    		echo<tr><td>Wrestler's Name</td><td>Phone</td><td>email</td></tr>;
       		foreach ($wrestler as $wrestler)
         {
           echo "<tr>
