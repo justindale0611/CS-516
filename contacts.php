@@ -42,6 +42,7 @@
 	?>
 <div>
 	<table border="1">
+		<tr><td>Name</td><td>Phone</td><td>Email</td></tr>
 
     		<?php
       		foreach ($wrestler as $wrestler)
