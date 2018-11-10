@@ -28,10 +28,9 @@
 </div>
 
 <link rel="stylesheet" type="text/css" href="Style.CSS">
-<body>
+<body =table>
 	<p>
 
-	PUT TABLE HERE 
 
 	<?php require_once "Dao.php";
 		$dao = new Dao();
