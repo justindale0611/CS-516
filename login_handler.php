@@ -41,14 +41,14 @@ if (empty($errors)) {
                 $_SESSION['login'] = true;
                 header('Location: Home.php');
             } else {
-                header('Location: Schedule.php');
+                header('Location: CoachingStaff.php');
             }
             
             //Create Account
         } else if (isset($_POST['CreateAccountButton'])) {
             $exist = $dao->userExists($username);
             if ($exist) {
-                header('Location: Schedule.php');
+                header('Location: CoachingStaff.php');
             } else {
                 $_SESSION['login']= true;
                 $dao->createAccount($username, $password);

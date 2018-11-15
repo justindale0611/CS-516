@@ -34,11 +34,13 @@ class Dao
     
     public function createAccount($username, $password)
     {
+        $salt= $password . $username;
+        $hashPass = hash('sha256', $salt);
         $connection = $this->getConnection();
         $saveQuery  = "INSERT INTO users (username, password) VALUES (:username, :password)";
         $q   = $connection->prepare($saveQuery);
         $q->bindParam(":username", $username);
-        $q->bindParam(":password", $password);
+        $q->bindParam(":password", $hashPass);
         $q->execute();
     }
     
@@ -67,6 +69,7 @@ class Dao
 
     public function validateUser($username, $password)
     {
+        
         $conn = $this->getConnection();
         $q    = $conn->prepare("select username from users where username='$username' and password='$password'");
         $q->bindParam(":username", $username);

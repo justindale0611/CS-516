@@ -16,7 +16,7 @@
 <form method="POST" action="FormsHandler.php">
 
 <label for="wrestlersname">Wrestler's Name:</label><br>
-			<input type="text" name="wrestlersname" required><br>
+			<input type="text" name="wrestlersname" id ="wrestlersname" required><br>
 			<?php if(isset($_SESSION['errors']['username'])) { ?>
 			<span id="usernameError" class="error"><?=$_SESSION['messages']['username']?></span>
 			<?php } ?>
