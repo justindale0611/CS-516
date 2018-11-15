@@ -48,9 +48,9 @@
       		foreach ($wrestler as $wrestler)
         {
           echo "<tr>
-                  <td>" . ($wrestler['wrestlersname']) . "</td>
-                  <td>" . ($wrestler['phone']) ."</td>
-                  <td>" . ($wrestler['email']) . "</td>
+                  <td>" . htmlentities($wrestler['wrestlersname']) . "</td>
+                  <td>" . htmlentities($wrestler['phone']) ."</td>
+                  <td>" . htmlentities($wrestler['email']) . "</td>
 				</tr>";
         }
     		?>

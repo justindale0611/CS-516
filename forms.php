@@ -17,15 +17,15 @@
 
 <label for="wrestlersname">Wrestler's Name:</label><br>
 			<input type="text" name="wrestlersname" required><br>
-			<!-- <?php if(isset($_SESSION['errors']['username'])) { ?>
+			<?php if(isset($_SESSION['errors']['username'])) { ?>
 			<span id="usernameError" class="error"><?=$_SESSION['messages']['username']?></span>
-			<?php } ?> -->
+			<?php } ?>
 
 			<label for="wrestlersphone">Wrestler's Phone Number:</label><br>
 			<input type="tel" name="wrestlersphone" required><br>
-			<!-- <?php if(isset($_SESSION['errors']['password'])) { ?>
+			<?php if(isset($_SESSION['errors']['password'])) { ?>
 			<span id="passwordError" class="error"><?=$_SESSION['messages']['password']?></span>
-			<?php } ?> -->
+			<?php } ?>
 
 			<label for="wrestlersemail">Wrestler's Email:</label><br>
 			<input type="email" name="wrestlersemail" required><br>
