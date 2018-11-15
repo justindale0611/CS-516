@@ -32,13 +32,13 @@ session_start();
 	<br>
 	<form method="POST" action="login_handler.php">
 			<label for="username">Username:</label><br>
-			<input type="text" name="username" required><br>
+			<input type="text" name="username" id ="usersname" required><br>
 			<?php if(isset($_SESSION['errors']['username'])) { ?>
 			<span id="usernameError" class="error"><?=$_SESSION['messages']['username']?></span>
 			<?php } ?>
 
 			<label for="password">Password:</label><br>
-			<input type="password" name="password" required><br>
+			<input type="password" name="password" id ="password" required><br>
 			<?php if(isset($_SESSION['errors']['password'])) { ?>
 			<span id="passwordError" class="error"><?=$_SESSION['messages']['password']?></span>
 			<?php } ?>
