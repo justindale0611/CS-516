@@ -29,7 +29,7 @@ li {
 }
 p{
 	font-family: 'Contrail One', cursive;
-	height: 100px;
+	/*height: 1;*/
 	clear: left;
 	color: white;
 	background-color: #004101; 
