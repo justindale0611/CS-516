@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-
+<script type="text/javascript" source="https://ajax.googleapis.com/ajax/libs/jquery1.7.2/jquery.min.js"></script>
 <?php
 	session_start();
 	if(!isset($_SESSION['login'])){
@@ -31,10 +31,30 @@
 <body>
 <p>
 	Welcome to Borah High School's wrestling page. This page contains all information needed for wrestlers, parents, fans, and administrators. We cannot thank you enough for your support and look forward to seeing you at our next match.
-<img src="Alias.jpg" alt="Borah Wrestler" height="25%" width="25%" class="center">
+<!-- <img src="Alias.jpg" alt="Borah Wrestler" height="25%" width="25%" class="center"> -->
 </p>
+<div class="photoGallery">
+	<img class="photo" src="Alias.jpg" style="width:100%">
+	<img class="photo" src="CoachG.jpg" style="width:100%">
+	<img class="photo" src="CoachJ.jpg" style="width:100%">
+</div>
 </body>
+<script>
+	var slideIndex = 0;
+carousel();
 
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("photo");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none"; 
+    }
+    slideIndex++;
+    if (slideIndex > x.length) {slideIndex = 1} 
+    x[slideIndex-1].style.display = "block"; 
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}	
+</script>
 <?php 
 	require_once("Footer.php");
 ?>
