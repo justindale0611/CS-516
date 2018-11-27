@@ -76,16 +76,16 @@ class Dao
         $q->bindParam(":password", $password);
         $q->setFetchMode(PDO::FETCH_ASSOC);
         $q->execute();
-        $result = $q->fetchAll();
-        $returnPassword=$result['password'];
-        $salt= $password . $username;
-        $hashPass = hash('sha256', $salt);
-        if($hashPass==$returnPassword){
-        return true;
-    	}else{
-    		return false;
-    	}
-
+        $result = $q->fetch();
+        if($result) {
+        	$returnPassword=$result['password'];
+        	if (password_verify($password, $returnPassword)) {
+        		return true;
+        	} else {
+    			return false;
+    		}
+    	} 
+    	return false;
     }
         public function getWrestler(){
       $conn=$this->getConnection();
