@@ -11,9 +11,9 @@ require_once("header.php");?>
 
 <link rel="stylesheet" type="text/css" href="Style.CSS">
 
-<body>
+<body id = "schedule">
+	LET'S GO LIONS! WIN! WIN! WIN!
 <p>
-<div id="scheduleDiv"> LET'S GO LIONS! WIN WIN WIN!</div>
 <object height="400" width="800" class="center" data="Schedule.pdf"></object>
 </p>
 </body>
