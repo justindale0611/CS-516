@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<script type="text/javascript" source="https://ajax.googleapis.com/ajax/libs/jquery1.7.2/jquery.min.js"></script>
+<script type="text/javascript" source="https://ajax.googleapis.com/ajax/libs/jquery3.3.1/jquery.min.js"></script>
 <?php
 	session_start();
 	if(!isset($_SESSION['login'])){
