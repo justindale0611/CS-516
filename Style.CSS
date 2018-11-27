@@ -55,3 +55,9 @@ form{
 .Coach{
 	clear: left;
 }
+div{
+	font-family: 'Contrail One', cursive;
+	clear: left;
+	color: yellow;
+	background-color: #004101; 
+}
