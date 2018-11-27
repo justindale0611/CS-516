@@ -31,12 +31,12 @@
 <body>
 <p>
 	Welcome to Borah High School's wrestling page. This page contains all information needed for wrestlers, parents, fans, and administrators. We cannot thank you enough for your support and look forward to seeing you at our next match.
-<!-- <img src="Alias.jpg" alt="Borah Wrestler" height="25%" width="25%" class="center"> -->
+
 </p>
 <div class="photoGallery">
-	<img class="photo" src="Alias.jpg" style="width:100%">
-	<img class="photo" src="CoachG.jpg" style="width:100%">
-	<img class="photo" src="CoachJ.jpg" style="width:100%">
+	<img class="photo" src="Alias.jpg" style="width:25% height:25%">
+	<img class="photo" src="CoachG.jpg" style="width:25% height:25%">
+	<img class="photo" src="CoachJ.jpg" style="width:25% height:25%">
 </div>
 </body>
 <script>
