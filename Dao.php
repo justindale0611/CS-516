@@ -77,7 +77,15 @@ class Dao
         $q->setFetchMode(PDO::FETCH_ASSOC);
         $q->execute();
         $result = $q->fetchAll();
-        return $result;
+        $returnPassword=$result['password'];
+        $salt= $password . $username;
+        $hashPass = hash('sha256', $salt);
+        if($hashPass==$returnPassword){
+        return true;
+    	}else{
+    		return false;
+    	}
+
     }
         public function getWrestler(){
       $conn=$this->getConnection();
