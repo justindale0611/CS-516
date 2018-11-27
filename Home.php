@@ -16,7 +16,7 @@
 	<link rel="icon" href="Logo.jpg" type="image/gif" sizes="16x16">
 </head>
 <h1>
-	<a href="contacts.php"><img src="transparent.png" alt="Borah Wrestler" height="25%" width="25%" onload="$(this).fadein()"></a>
+	<a href="contacts.php"><img src="transparent.png" alt="Borah Wrestler" height="25%" width="25%" onload="$(this).fadein(100)"></a>
 </h1>
 <div id="navigation">
 <ul class="nav">
