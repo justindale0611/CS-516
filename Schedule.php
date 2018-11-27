@@ -12,8 +12,9 @@ require_once("header.php");?>
 <link rel="stylesheet" type="text/css" href="Style.CSS">
 
 <body id = "schedule">
-	LET'S GO LIONS! WIN! WIN! WIN!
+
 <p>
+	LET'S GO LIONS! WIN! WIN! WIN!
 <object height="400" width="800" class="center" data="Schedule.pdf"></object>
 </p>
 </body>
