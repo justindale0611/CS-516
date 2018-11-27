@@ -13,7 +13,7 @@ require_once("header.php");?>
 
 <body  id = schedule>
 <p>
-<div> LET'S GO LIONS! WIN WIN WIN!</div>
+<div id="scheduleDiv"> LET'S GO LIONS! WIN WIN WIN!</div>
 <object height="400" width="800" class="center" data="Schedule.pdf"></object>
 </p>
 </body>
