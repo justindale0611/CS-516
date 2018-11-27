@@ -34,9 +34,9 @@
 
 </p>
 <div class="photoGallery">
-	<img class="photo" src="Alias.jpg" style="width:25%; height:25%;">
-	<img class="photo" src="CoachG.jpg" style="width:25%; height:25%;">
-	<img class="photo" src="CoachJ.jpg" style="width:25%; height:25%;">
+	<img class="photo" src="Alias.jpg" style="width:25%; height:25%; display: block; margin-left: auto; margin-right: auto;">
+	<img class="photo" src="CoachG.jpg" style="width:25%; height:25%; display: block; margin-left: auto; margin-right: auto;">
+	<img class="photo" src="CoachJ.jpg" style="width:25%; height:25%; display: block; margin-left: auto; margin-right: auto;">
 </div>
 </body>
 <script>
