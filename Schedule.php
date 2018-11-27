@@ -12,7 +12,7 @@ require_once("header.php");?>
 <link rel="stylesheet" type="text/css" href="Style.CSS">
 
 <body  id = schedule>
-<div id=schedulediv> LET'S GO LIONS! WIN WIN WIN!</div>
+<br><div id=schedulediv> LET'S GO LIONS! WIN WIN WIN!</div>
 <p><object height="400" width="800" class="center" data="Schedule.pdf"></object>
 </p>
 </body>
