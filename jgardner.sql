@@ -1,10 +1,10 @@
 use heroku_b0950797e204108;
 DROP TABLE IF EXISTS users;
 
-CREATE TABLE users(
+CREATE TABLE users(usersuserswrestlers
 	id int auto_increment PRIMARY KEY, 
     username VARCHAR(130) NOT NULL,
-    password VARCHAR (65) NOT NULL
+    password VARCHAR (256) NOT NULL
 );
 DROP TABLE IF EXISTS wrestlers;
 
