@@ -77,7 +77,7 @@ class Dao
         $q->bindParam(":password", $hashPass);
         $q->setFetchMode(PDO::FETCH_ASSOC);
         $q->execute();
-        $result = $q->fetch();
+        $result = $q->fetchAll();
         if($result) {
         	$returnPassword=$result['password'];
         	if ($hashPass== $returnPassword) {
