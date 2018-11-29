@@ -69,17 +69,18 @@ class Dao
 
     public function validateUser($username, $password)
     {
-        
+        $salt= $password . $username;
+        $hashPass = hash('sha256', $salt);
         $conn = $this->getConnection();
-        $q    = $conn->prepare("select username from users where username='$username' and password='$password'");
+        $q    = $conn->prepare("select username from users where username= :username and password= :password");
         $q->bindParam(":username", $username);
-        $q->bindParam(":password", $password);
+        $q->bindParam(":password", $hashPass);
         $q->setFetchMode(PDO::FETCH_ASSOC);
         $q->execute();
         $result = $q->fetch();
         if($result) {
         	$returnPassword=$result['password'];
-        	if (password_verify($password, $returnPassword)) {
+        	if (password_verify($hashPass, $returnPassword)) {
         		return true;
         	} else {
     			return false;
