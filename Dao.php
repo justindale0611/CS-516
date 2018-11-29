@@ -80,7 +80,7 @@ class Dao
         $result = $q->fetch();
         if($result) {
         	$returnPassword=$result['password'];
-        	if (password_verify($hashPass, $returnPassword)) {
+        	if ($hashPass== $returnPassword) {
         		return true;
         	} else {
     			return false;
