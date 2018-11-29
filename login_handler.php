@@ -37,11 +37,13 @@ if (empty($errors)) {
         //Login
         if (isset($_POST['LoginButton'])) {
             $user = $dao->validateUser($username, $password);
+            echo $user;
+            exit;
             if ($user) {
                 $_SESSION['login'] = true;
                 header('Location: Home.php');
             } else {
-                header('Location: CoachingStaff.php');
+                header('Location: WrestlerLogin.php');
             }
             
             //Create Account
